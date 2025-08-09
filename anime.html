@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Atom WiFi Promo</title>
+<style>
+  /* Reset & base */
+  body, html {
+    margin: 0; padding: 0; height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Background image with overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: 
+      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+      url('https://i.ibb.co/WN26XVph/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -2;
+  }
+
+  /* Container */
+  .container {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  /* Floating atom logos */
+  .atom-logo {
+    position: absolute;
+    width: 50px;
+    opacity: 0.75;
+    animation: floatAtom 7s ease-in-out infinite;
+    z-index: 1;
+  }
+  .atom1 { top: 15%; left: 15%; animation-delay: 0s; }
+  .atom2 { top: 30%; right: 15%; animation-delay: 3s; }
+  .atom3 { bottom: 25%; left: 30%; animation-delay: 5s; }
+  .atom4 { top: 50%; left: 70%; animation-delay: 2s; }
+  .atom5 { bottom: 15%; right: 25%; animation-delay: 4s; }
+
+  @keyframes floatAtom {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(20deg); }
+  }
+
+  /* Text styles */
+  h1 {
+    font-size: 2.8em;
+    margin: 0 0 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  }
+  p {
+    max-width: 460px;
+    font-size: 1.25em;
+    margin: 0 0 40px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  }
+
+  /* Button */
+  .btn {
+    background-color: #00bfff;
+    color: white;
+    padding: 14px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,191,255,0.5);
+    transition: background-color 0.3s ease;
+    z-index: 1;
+  }
+  .btn:hover {
+    background-color: #0099cc;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 1em;
+      max-width: 90vw;
+      margin-bottom: 30px;
+    }
+    .btn {
+      padding: 12px 30px;
+      font-size: 1em;
+    }
+    .atom-logo {
+      width: 30px;
+    }
+    .atom1 { top: 10%; left: 10%; }
+    .atom2 { top: 25%; right: 10%; }
+    .atom3 { bottom: 20%; left: 20%; }
+    .atom4 { top: 45%; left: 65%; }
+    .atom5 { bottom: 10%; right: 20%; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.ibb.co/0RCbYF65/atom-logo.png" alt="Atom Logo" class="atom-logo atom1" />
+    <img src="https://i.ibb.co/0RCbYF65/atom-logo.png" alt="Atom Logo" class="atom-logo atom2" />
+    <img src="https://i.ibb.co/0RCbYF65/atom-logo.png" alt="Atom Logo" class="atom-logo atom3" />
+    <img src="https://i.ibb.co/0RCbYF65/atom-logo.png" alt="Atom Logo" class="atom-logo atom4" />
+    <img src="https://i.ibb.co/0RCbYF65/atom-logo.png" alt="Atom Logo" class="atom-logo atom5" />
+
+    <h1>Atom WiFi ကို ယုံကြည်ရွေးချယ်ပြီး သုံးနေကြတဲ့သူတွေကို Big Thanks ပါဗျ။</h1>
+    <p>အချစ်မပျက်စေဖို… Connection မပြတ်တဲ့ Atom WiFi!  
+    တကယ်အရသာရှိတဲ့ net life ကို ခံစားချင်တယ်ဆိုရင် နောက်တစ်ယောက်က သင်ပါပဲ!<br/>
+    📞09750092753 / 09771317874 ဖုန်းဆက်ခဲ့နော် order တင်ဖိုစောင့်နေမှာ🥺🥰
+    </p>
+
+    <a href="https://broadband.atom.com.mm/#" target="_blank" class="btn">Visit Atom Myanmar</a>
+  </div>
+</body>
+</html>
